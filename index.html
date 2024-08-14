@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="file" />
+        <input type="submit" value="Upload" />
+    </form>
+    {% if result %}
+        <p>Prediction: {{ result }}</p>
+    {% endif %}
+</body>
+</html>
